@@ -12,15 +12,5 @@ version = "1.0"
 features = ['full']
 [dependencies.quote]
 version = "1.0"
-[dependencies.serde]
-version = "1.0"
-features = ["derive"]
-[dependencies.serde_json]
-version = "1.0"
-[dependencies.thiserror]
-version = "1.0"
-[dependencies.poem]
-version = "1.2"
-features = ["anyhow"]
 [dependencies.validator]
 version = "0.14"
