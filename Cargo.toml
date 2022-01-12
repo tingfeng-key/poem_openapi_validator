@@ -2,7 +2,6 @@
 name = "poem_openapi_validator_derive"
 version = "0.1.0"
 edition = "2021"
-authors = ["Your Name <you@example.com>"]
 authors = ["tingfeng-key <1770963469@qq.com>"]
 keywords = ["poem-openapi", "validator"]
 exclude = ["target", "Cargo.lock", ".gitignore", ".idea", ".vscode"]
