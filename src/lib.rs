@@ -17,7 +17,7 @@ pub fn derive_pov_validation(input: TokenStream) -> TokenStream {
                             match errors {
                                 validator::ValidationErrorsKind::Field(err_vec) => {
                                     match err_vec[0].message {
-                                        Some(ref error_msg) => {error_msg.to_string();break;},
+                                        Some(ref error_msg) => {result = error_msg.to_string();break;},
                                         None => {}
                                     }
                                 }
