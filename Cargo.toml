@@ -2,6 +2,15 @@
 name = "poem_openapi_validator_derive"
 version = "0.1.0"
 edition = "2021"
+authors = ["Your Name <you@example.com>"]
+authors = ["tingfeng-key <1770963469@qq.com>"]
+keywords = ["poem-openapi", "validator"]
+exclude = ["target", "Cargo.lock", ".gitignore", ".idea", ".vscode"]
+description = "poem openapi validator"
+homepage = "https://github.com/tingfeng-key/poem_openapi_validator"
+repository = "https://github.com/tingfeng-key/poem_openapi_validator"
+readme = "README.md"
+license-file = "LICENSE"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
