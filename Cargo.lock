@@ -64,7 +64,7 @@ checksum = "d4fd5641d01c8f18a23da7b6fe29298ff4b55afcccdf78973b24cf3175fee32e"
 
 [[package]]
 name = "poem_openapi_validator_derive"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "quote",
  "syn",

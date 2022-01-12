@@ -1,6 +1,6 @@
 [package]
 name = "poem_openapi_validator_derive"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["tingfeng-key <1770963469@qq.com>"]
 keywords = ["poem-openapi", "validator"]
