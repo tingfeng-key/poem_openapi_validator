@@ -8,7 +8,7 @@ pub fn derive_pov_validation(input: TokenStream) -> TokenStream {
     let name = input.ident;
     let expanded = quote! {
         impl #name {
-            pub fn is_error(&self) -> Option<String> {
+            pub fn validator_is_error(&self) -> Option<String> {
                 match self.validate() {
                     Ok(_) => None,
                     Err(ref errors) => {
@@ -16,8 +16,10 @@ pub fn derive_pov_validation(input: TokenStream) -> TokenStream {
                         for (_field, errors) in errors.errors().iter() {
                             match errors {
                                 validator::ValidationErrorsKind::Field(err_vec) => {
-                                    result = err_vec[0].message.as_ref().unwrap().to_string();
-                                    break;
+                                    match err_vec[0].message {
+                                        Some(ref error_msg) => {error_msg.to_string();break;},
+                                        None => {}
+                                    }
                                 }
                                 validator::ValidationErrorsKind::Struct(_) => {}
                                 validator::ValidationErrorsKind::List(_) => {}
